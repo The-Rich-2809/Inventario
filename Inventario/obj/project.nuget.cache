@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Tb6eXMPT8U=",
+  "dgSpecHash": "0f3fVvi7Zzw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ricar\\Documents\\GitHub\\Inventario\\Inventario\\Inventario.csproj",
+  "projectFilePath": "C:\\Users\\ricar\\Documents\\Programación\\Nueva carpeta\\Inventario\\Inventario.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ricar\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ricar\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

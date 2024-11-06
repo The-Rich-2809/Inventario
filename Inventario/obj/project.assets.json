@@ -4044,11 +4044,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ricar\\Documents\\GitHub\\Inventario\\Inventario\\Inventario.csproj",
+      "projectUniqueName": "C:\\Users\\ricar\\Documents\\Programación\\Nueva carpeta\\Inventario\\Inventario.csproj",
       "projectName": "Inventario",
-      "projectPath": "C:\\Users\\ricar\\Documents\\GitHub\\Inventario\\Inventario\\Inventario.csproj",
+      "projectPath": "C:\\Users\\ricar\\Documents\\Programación\\Nueva carpeta\\Inventario\\Inventario.csproj",
       "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ricar\\Documents\\GitHub\\Inventario\\Inventario\\obj\\",
+      "outputPath": "C:\\Users\\ricar\\Documents\\Programación\\Nueva carpeta\\Inventario\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ricar\\AppData\\Roaming\\NuGet\\NuGet.Config",

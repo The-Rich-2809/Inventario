@@ -1,0 +1,57 @@
+﻿@model Inventario.Models.InventarioViewModel
+
+@{
+    ViewBag.Title = "Bienvenida Administrador";
+    Layout = "_LayoutAdmin";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <main>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Activo</th>
+                    <th scope="col">Detalle</th>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">IMEI</th>
+                    <th scope="col">No. Serie</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Costo</th>
+                    <th scope="col">Ubicación Actual</th>
+                    <th scope="col">Responsable</th>
+                    <th scope="col">Cargo</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Celular</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    @foreach(var e in Model.Equipos)
+                    {
+                        <td>@e.Tipo_Activo</td>
+                        <td>@e.Detalle</td>
+                        <td>@e.Marca</td>
+                    }
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
