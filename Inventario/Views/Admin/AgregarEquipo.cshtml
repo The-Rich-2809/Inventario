@@ -1,0 +1,183 @@
+﻿@{
+    Layout = "_LayoutAdmin";
+}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <main class="container-fluid">
+        <h1>Nuevo Equipo</h1>
+        <form class="needs-validation" novalidate method="post" enctype="multipart/form-data">
+            <div class="row g-3">
+
+                <div class="col-md-5">
+                    <label for="Categoria" class="form-label">Tipo del Activo</label>
+                    <select name="Tipo_Activo" class="form-select" id="Categoria" required>
+                        <option value="">Tipo...</option>
+                        <option>Computadora All In One</option>
+                        <option>Laptop</option>
+                        <option>Impresoras</option>
+                        <option>Camaras</option>
+                        <option>Celulares</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Seleccione una tipo válido.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="Producto" class="form-label">Detalle</label>
+                    <input name="Detalle" type="text" class="form-control" id="Producto" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Se requiere un detalle válido.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="Producto" class="form-label">Marca</label>
+                    <input name="Marca" type="text" class="form-control" id="Producto" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Se requiere una marca válida.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="Producto" class="form-label">Modelo</label>
+                    <input name="Modelo" type="text" class="form-control" id="Producto" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Se requiere un modelo válido.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="Producto" class="form-label">Color</label>
+                    <input name="Color" type="text" class="form-control" id="Producto" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Se requiere un color válido.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="Producto" class="form-label">IMEI</label>
+                    <input name="IMEI" type="text" class="form-control" id="Producto" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Se requiere un IMEI válido.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="Producto" class="form-label">No. De serie</label>
+                    <input name="No_Serie" type="text" class="form-control" id="Producto" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Se requiere un No_Serie válido.
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <label for="Categoria" class="form-label">Estado</label>
+                    <select name="Estado" class="form-select" id="Categoria" required>
+                        <option value="">Estado...</option>
+                        <option>Usado</option>
+                        <option>Nuevo</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Seleccione una tipo válido.
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="Precio" class="form-label">Costo</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input name="Costo" type="text" class="form-control" aria-label="Amount (to the nearest dollar)" required>
+                        <span class="input-group-text">MXN</span>
+                    </div>
+                    <div class="invalid-feedback">
+                        Coloque un precio.
+                    </div>
+                </div>
+
+
+                
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Seleccione las imagenes que llevara el producto</label>
+                        <input name="Imagen" class="form-control" type="file" id="formFileMultiple" multiple>
+                    </div>
+                    <div class="invalid-feedback">
+                        Zip code required.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="Cantidad" class="form-label">Cantidad</label>
+                    <br />
+                    <input name="Existencia" type="number" id="Cantidad" required />
+                    <div class="invalid-feedback">
+                        Seleccione una cantidad.
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="Producto" class="form-label">Color</label>
+                    <input name="Color" type="text" class="form-control" id="Producto" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Se requiere un Color
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="Producto" class="form-label">Tallas</label>
+                    <select name="Talla" class="form-select" id="Categoria" required>
+                        <option value="">Talla...</option>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                        <option>Extra grande</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Se requiere un nombre válido.
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="Sexo" class="form-label">Sexo</label>
+                    <select name="Sexo" class="form-select" id="Sexo" required>
+                        <option value="">Sexo...</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Unisex</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Se requiere un nombre válido.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Descripción del producto</label>
+                    <textarea name="Descripcion" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <div class="invalid-feedback">
+                    Se requiere una descripción.
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <button asp-controller="Admin" asp-action="NuevoProducto" method="post" class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+        </form>
+        <br />
+        <h1>@ViewBag.Mensaje</h1>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

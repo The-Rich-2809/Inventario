@@ -17,36 +17,63 @@
 
 <body>
     <main>
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">Activo</th>
-                    <th scope="col">Detalle</th>
-                    <th scope="col">Marca</th>
-                    <th scope="col">Modelo</th>
-                    <th scope="col">Color</th>
-                    <th scope="col">IMEI</th>
-                    <th scope="col">No. Serie</th>
-                    <th scope="col">Estado</th>
-                    <th scope="col">Costo</th>
-                    <th scope="col">Ubicación Actual</th>
-                    <th scope="col">Responsable</th>
-                    <th scope="col">Cargo</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Celular</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    @foreach(var e in Model.Equipos)
-                    {
-                        <td>@e.Tipo_Activo</td>
-                        <td>@e.Detalle</td>
-                        <td>@e.Marca</td>
-                    }
-                </tr>
-            </tbody>
-        </table>
+        <div class="container-fluid table-responsive">
+            <table class="table table-bordered table-hover w-100 small">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Activo</th>
+                        <th scope="col">Detalle</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Color</th>
+                        <th scope="col">IMEI</th>
+                        <th scope="col">No. Serie</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Costo</th>
+                        <th scope="col">Ubicación Actual</th>
+                        <th scope="col">Responsable</th>
+                        <th scope="col">Cargo</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Celular</th>
+                        <th scope="col">
+                            <a href="@Url.Action("AgregarEquipo", "Admin")" class="text-primary">Agregar</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        @foreach (var e in Model.Equipos)
+                        {
+                            <td>@e.Tipo_Activo</td>
+                            <td>@e.Detalle</td>
+                            <td>@e.Marca</td>
+                            <td>@e.Modelo</td>
+                            <td>@e.Color</td>
+                            <td>@e.IMEI</td>
+                            <td>@e.No_Serie</td>
+                            <td>@e.Estado</td>
+                            <td>@e.Costo</td>
+                            <td>@e.Ubicacion_Actual</td>
+
+                            foreach (var u in Model.Usuarios)
+                            {
+                                if (e.Id_Responsable == u.Id)
+                                {
+                                    <td>@u.Nombre</td>
+                                    <td>@u.Cargo</td>
+                                    <td>@u.Correo</td>
+                                    <td>@u.Telefono</td>
+                                    <td>
+                                        <a href="@Url.Action("UserEdit", "Admin", new { valor = u.Id })" class="text-primary">Editar</a>
+                                        <a href="@Url.Action("UserDelete", "Admin", new { valor = u.Id })" class="text-danger">Eliminar</a>
+                                    </td>
+                                }
+                            }
+                        }
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

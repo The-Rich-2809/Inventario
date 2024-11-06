@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ricar\\Documents\\Programación\\Nueva carpeta\\Inventario\\Inventario.csproj": {}
+    "C:\\xampp\\htdocs\\Inventario\\Inventario\\Inventario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ricar\\Documents\\Programación\\Nueva carpeta\\Inventario\\Inventario.csproj": {
+    "C:\\xampp\\htdocs\\Inventario\\Inventario\\Inventario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ricar\\Documents\\Programación\\Nueva carpeta\\Inventario\\Inventario.csproj",
+        "projectUniqueName": "C:\\xampp\\htdocs\\Inventario\\Inventario\\Inventario.csproj",
         "projectName": "Inventario",
-        "projectPath": "C:\\Users\\ricar\\Documents\\Programación\\Nueva carpeta\\Inventario\\Inventario.csproj",
-        "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ricar\\Documents\\Programación\\Nueva carpeta\\Inventario\\obj\\",
+        "projectPath": "C:\\xampp\\htdocs\\Inventario\\Inventario\\Inventario.csproj",
+        "packagesPath": "C:\\Users\\Rich-Huawei\\.nuget\\packages\\",
+        "outputPath": "C:\\xampp\\htdocs\\Inventario\\Inventario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ricar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rich-Huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

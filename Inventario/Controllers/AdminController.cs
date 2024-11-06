@@ -50,6 +50,15 @@ namespace Inventario.Controllers
             else
                 return RedirectToAction("Index", "Home");
         }
+        public IActionResult AgregarEquipo()
+        {
+            if (Cookies())
+            {
+                return View();
+            }
+            else
+                return RedirectToAction("Index", "Home");
+        }
         public IActionResult Usuarios()
         {
             if(Cookies())

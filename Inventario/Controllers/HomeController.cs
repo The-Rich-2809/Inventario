@@ -99,7 +99,7 @@ namespace Inventario.Controllers
             };
             var insertarEquipo = new Equipo[]
             {
-                new Equipo {Tipo_Activo = "Laptop", Color = "Gris", Costo = 1, Estado = "Usado", Detalle = "Laptop", IMEI = "", Marca = "Lenovo", Modelo = "IdeaPad 3 14ITL05", No_Serie = "PF49JQPT", Ubicacion_Actual = "MCN", Id_Responsable = 1}
+                new Equipo {Tipo_Activo = "Laptop", Color = "Gris", Costo = 1, Estado = "Usado", Detalle = "Laptop", IMEI = "", Marca = "Lenovo", Modelo = "IdeaPad 3 14ITL05", No_Serie = "PF49JQPT", Ubicacion_Actual = "MCN", Id_Responsable = 0}
             };
 
             foreach (var u in insertarUsuario)
